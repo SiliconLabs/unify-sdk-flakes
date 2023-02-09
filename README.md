@@ -1,4 +1,4 @@
-# cpc-daemon
+# Nix flake for cpc-daemon (Experimental)
 
 This repository contains a nix flake for the [SiliconLabs Co-Processor Communication Daemon](https://github.com/SiliconLabs/cpc-daemon) and a justfile with a few conveniences.
 
