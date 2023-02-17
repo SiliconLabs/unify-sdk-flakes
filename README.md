@@ -20,14 +20,10 @@ Use [`direnv`](https://direnv.net/) combined with [`nix-direnv`](https://github.
 
 Create `.direnv.rc`
 
-```
-───────┬───────────────────────────────────────────────────────────────────
-       │ File: .direnv.rc
-───────┼───────────────────────────────────────────────────────────────────
-   1   │ if [ -f $HOME/.nix-profile/share/nix-direnv/direnvrc ]; then
-   2   │     source $HOME/.nix-profile/share/nix-direnv/direnvrc
-   3   │ fi
-───────┴───────────────────────────────────────────────────────────────────
+```bash
+if [ -f $HOME/.nix-profile/share/nix-direnv/direnvrc ]; then
+    source $HOME/.nix-profile/share/nix-direnv/direnvrc
+fi
 ```
 
 and give `direnv` permission to load the `.envrc` present in the project directory.
